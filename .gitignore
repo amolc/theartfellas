@@ -1,0 +1,4 @@
+wp-content/themes/elitist/framework/cache
+*.class
+*.pyc
+*.pyo
