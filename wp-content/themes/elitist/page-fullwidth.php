@@ -3,7 +3,7 @@
 Template Name: Page Full Width
 */
 ?>
-<?php include('header_clean.php');//get_header(); ?>
+<?php include('header_clean_v1.php');//get_header(); ?>
 		<?php get_template_part( "beforeloop", "fullwidth" ) ?> 
                <div class="page_thumbnail" style="margin-top: 10px;">
 			   <?php 

@@ -37,7 +37,7 @@
 
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<meta name="viewport" content="width=1000, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 
         
@@ -104,7 +104,7 @@
 
 
 
-            <div class="navbar span3" style="width:209px !important;">
+            <div class="navbar span3" style="float:left;">
 			     
 
 
@@ -138,11 +138,11 @@
         $res = mysql_query("Select * from wp_posts where ID='3960' and post_status = 'publish' ") or die(mysql_error());
         $row = mysql_fetch_array($res); 	
 		?>
-		<div class="span4" style="font-size:13px; margin-left: 6px; width:227px !important;">
+		<div class="span4" style="font-size:13px; margin-left: 6px; width:227px !important;float:left;">
 			<span class="artist_here"><i><?php echo $row['post_content']; ?></i></span> 
 			
 		</div>
-        	<div class="logo_container span5" style="width: 41.1709%;">
+        	<div class="logo_container" >
 				<a href="http://www.theartfellas.com/">
                 <!--<h1><a href="<php echo home_url(); ?>/"><php if($logo = of_get_option('logo')){ ?>
 				<img src="<php echo $logo; ?>" alt="<php bloginfo('name'); ?>"  />

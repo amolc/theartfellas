@@ -24,6 +24,11 @@ html {
 }
 body {
   background-color: #000000;
+  background:url(http://www.theartfellas.com/wp-content/uploads/2014/02/background1500v1.png) ;
+  //background-origin: padding-box!important;
+  background-position: 0px -28px!important;
+  background-repeat: no-repeat!important;
+  background-size: auto auto!important;
   color:#838383 !important;
 }
 #wrap {
@@ -39,17 +44,19 @@ Header
 */
 #header {
   padding-top:7px;
-  height: 162px;
+  min-height: 162px;
   border-top: 2px solid #ffffff;
   /*border-bottom: 2px solid #ffffff; padding: 12px 0;*/
   margin-bottom: 0;
  margin-top: 58px;
   
 }
+
 .logo_container {
   float:right !important;
   margin:-6px 0px 0px px;
 }
+
 .logo_container a {
 	float:left;
 	width:472px;
@@ -1264,12 +1271,7 @@ Sub Footer
   border-top: 2px solid #ffffff;
   /*border-bottom: 2px solid #ffffff;*/
 }
-.sub_footer_wrap p {
-  font-size:13px;
-  margin: 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  padding:0px;
-}
+
 .sub_footer_wrap a:hover {
   text-decoration: none;
 }
@@ -2297,7 +2299,7 @@ Portfolio
   float: left;
   overflow: hidden;
   height: auto;
-  padding: 10px;
+  padding: 2px;
 }
 .portfolio_item a {
   display: block;
@@ -2341,7 +2343,7 @@ Portfolio
   transition: all 300ms linear;
   opacity: 0;
   filter: alpha(opacity=0);
-  border: 2px solid #ffffff;
+  border: 2px solid black!important;
   overflow: hidden;
 }
 .portfolio_item a:hover .ql_hover {
@@ -2380,21 +2382,21 @@ Portfolio
 }
 .portfolio_item .ql_hover h2 {
   color: black!important;
-  margin-bottom: -3px;
-  font-size: 30px;
-  /*text-transform: uppercase;*/
+  margin-top: 5px;
+  font-size: 26px;
+  line-height: 26px;
   font-family:"Times New Roman";
  
 }
-
+/*
 .portfolio_item .ql_hover p {
-  color: #999999;
+  color: #838383;
   font-size:16px;
   font-style: normal;
-  margin-top: -14px;
-  font-family: "Helvetica Neue,Helvetica,Arial,sans-serif";
+  margin-top: -19px;
+  font-family:"HelveticaNeue-Light"!important;
   
-}
+} */
 .portfolio_item .ql_hover .short_line {
   display: block;
   height: 1px;
@@ -2847,6 +2849,13 @@ img[class*="wp-image-"],
   height: auto;
 }
 @media only screen and (max-width: 480px) {
+.by_country
+{
+float: right;
+margin-top: -35px!important;
+font-size:10px!important;
+font-weight:bold;
+}
   .gallery-columns-2 .gallery-item {
     width: 50%;
   }
@@ -2854,6 +2863,22 @@ img[class*="wp-image-"],
     width: 100%;
     height: auto;
   }
+  
+  .portfolio_item .ql_hover h2 {
+font-size: 9px;
+margin-left: -12px;
+margin-top: -22px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
 }
 /*
 ==========================================
@@ -3059,7 +3084,32 @@ Global Styles
   .service_desc .offset1 {
     margin-left: 14.8%;
   }
+  
+  
+.logo_container {
+  float:right !important;
 }
+
+.logo_container a {
+	float:left;
+	width:452px;
+	height:20px;
+  	background: url(images/logo-theartfellas-mobile.png) no-repeat right;
+}
+.logo_container a:hover {
+	float:left;
+	width:452px;
+	height:20px;
+	background: url(images/logo-theartfellas-mobile-hover.png) no-repeat right;
+}  
+  
+}
+
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 978px) {
   #header {
     position: relative;
@@ -3069,13 +3119,14 @@ Global Styles
   
   }
   #header .navbar {
-    display: none;
+    display: block;
+    width:119px;
   }
   .tinynav {
-    display: block;
+    display: none;
   }
   #nav {
-    display: none;
+    display: block;
   }
   .filter_list > ul > li {
     float: left;
@@ -3085,9 +3136,29 @@ Global Styles
     position: relative;
     margin-top: 2.5em;
   }
+	
   #container {
     margin-left: 0;
   }
+  
+.logo_container {
+  float:right !important;
+  margin:-6px 0px 0px px;
+}
+
+.logo_container a {
+	float:left;
+	width:282px;
+	height:20px;
+  	background: url(images/logo-theartfellas-mobile2.png) no-repeat right;
+}
+.logo_container a:hover {
+	float:left;
+	width:282px;
+	height:20px;
+	background: url(images/logo-theartfellas-mobile2-h.png) no-repeat right;
+} 
+
   /*
   	Content
   	========================================== 
@@ -3133,6 +3204,13 @@ Global Styles
 // ------------------
 */
 @media (min-width: 481px) and (max-width: 767px) {
+.by_country
+{
+float: right;
+margin-top: -35px;
+font-size:10px;
+font-weight:bold;
+}
   #wrap {
     display: block;
   }
@@ -3147,13 +3225,14 @@ Global Styles
   
   }
   #header .navbar {
-    display: none;
+    display: block;
+    width:119px;
   }
   .tinynav {
-    display: block;
+    display: none;
   }
   #nav {
-    display: none;
+    display: block;
   }
   .filter_list > ul > li {
     float: left;
@@ -3169,6 +3248,45 @@ Global Styles
   .tinynav {
     float: none;
   }
+  .portfolio_item .ql_hover h2 {
+font-size: 9px;
+margin-left: -12px;
+margin-top: -22px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
+  
+  #header .jqueryslidemenu ul.nav {
+  /*float: right;*/
+  margin-right: 5.38461538461538em;
+  width:109px !important;
+  float: left;
+}
+.logo_container {
+  float:right !important;
+}
+
+.logo_container a {
+	float:left;
+	width:282px;
+	height:20px;
+  	background: url(images/logo-theartfellas-mobile2.png) no-repeat right;
+}
+.logo_container a:hover {
+	float:left;
+	width:282px;
+	height:20px;
+	background: url(images/logo-theartfellas-mobile2-h.png) no-repeat right;
+} 
+
   /*
   	Content
   	--------------------------------
@@ -3231,7 +3349,73 @@ Global Styles
 // Landscape phones and down
 // ------------------
 */
+
+@media (max-width: 680px) {
+div.span4
+{
+	width:215px !important;	
+}
+
+}
+
+@media (max-width: 640px) {
+div.span4
+{
+	width:170px !important;	
+}
+}
+@media (max-width: 595px) {
+.by_country
+{
+float: right;
+margin-top: -35px!important;
+font-size:10px!important;
+font-weight:bold;
+}
+div.span4
+{
+	width:150px !important;	
+}
+.portfolio_item .ql_hover h2 {
+font-size: 9px;
+margin-left: -12px;
+margin-top: -22px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
+
+.logo_container a {
+	float:left;
+	width:172px;
+	height:20px;
+  	background: url(images/logo-theartfellas-mobile3.png) no-repeat right;
+}
+.logo_container a:hover {
+	float:left;
+	width:172px;
+	height:20px;
+	background: url(images/logo-theartfellas-mobile3-h.png) no-repeat right;
+} 
+
+}
+
+
 @media (max-width: 480px) {
+.by_country
+{
+float: right;
+margin-top: -35px!important;
+font-size:10px!important;
+font-weight:bold;
+}
   #wrap {
     display: block;
   }
@@ -3247,14 +3431,35 @@ Global Styles
   
   }
   #header .navbar {
-    display: none;
+    display: block;
+    width:119px;
   }
   .tinynav {
-    display: block;
-  }
-  #nav {
     display: none;
   }
+  #nav {
+    display: block;
+  }
+  .logo_container {
+  float:right !important;
+  margin:0px 0px 0px 0px;
+  }
+	.portfolio_item .ql_hover h2 {
+font-size: 9px;
+margin-left: -12px;
+margin-top: -22px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
+	
   .filter_list > ul > li {
     float: left;
     margin-right: 1.53846153846154em;
@@ -3262,6 +3467,15 @@ Global Styles
   .tinynav {
     float: none;
   }
+ #header .jqueryslidemenu ul.nav {
+  /*float: right;*/
+  margin-right: 5.38461538461538em;
+  width:109px !important;
+  float: left;
+}
+
+
+
   #header_bottom {
     position: relative;
     margin-top: 2.5em;
@@ -3346,7 +3560,155 @@ Global Styles
     width: 100%;
     margin-right: 0;
   }
+  
+
+div.span4
+{
+	width:120px !important;	
+	font-size:10px !important;
 }
+
+div.span4 p
+{
+	line-height: 10.5px !important;	
+}
+
+.logo_container a {
+	float:left;
+	width:172px;
+	height:20px;
+  	background: url(images/logo-theartfellas-mobile3.png) no-repeat right;
+}
+
+.logo_container a:hover {
+	float:left;
+	width:172px;
+	height:20px;
+	background: url(images/logo-theartfellas-mobile3-h.png) no-repeat right;
+} 
+
+
+
+  
+  
+}
+
+@media (max-width: 480px) {
+.by_country
+{
+float: right;
+margin-top: -35px!important;
+font-size:10px!important;
+font-weight:bold;
+}
+#header .navbar {
+width: 79px;
+font-size: 8px !important;
+}
+
+#header .navbar a {
+font-size: 8px !important;
+}
+.portfolio_item .ql_hover h2 {
+font-size: 9px;
+margin-left: -12px;
+margin-top: -22px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
+}
+
+@media (max-width: 395px) {
+.by_country
+{
+float: right;
+margin-top: -35px;
+font-size:10px;
+font-weight:bold;
+}
+.logo_container a {
+	float:left;
+	width:130px;
+	height:20px;
+  	background: url(images/logo-theartfellas-mobile4.png) no-repeat right;
+}
+
+.logo_container a:hover {
+	float:left;
+	width:130px;
+	height:20px;
+	background: url(images/logo-theartfellas-mobile4-h.png) no-repeat right;
+} 
+.portfolio_item .ql_hover h2 {
+font-size: 9px;
+margin-left: -12px;
+margin-top: -22px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
+}
+
+
+@media (max-width: 350px) {
+
+.title-cell {
+margin-left: 118px!important;
+font-size: 9px!important;
+}
+.art_alpha
+{
+font-family:"Times New Roman";
+font-size:15px!important;
+color:#000000;
+margin-top: 39px; 
+margin-bottom: 44px;
+}
+
+.by_country
+{
+float: right;
+margin-top: -72px!important;
+font-size:15px!important;
+font-weight:bold;
+}
+div.span4
+{
+	width:120px !important;	
+	font-size:9px !important;
+}
+.portfolio_item .ql_hover h2 {
+font-size: 10px;
+margin-top: -20px;
+font-family:"Times New Roman";
+}
+.artist_info p{
+clear: both;
+color: #838383;
+font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+font-size: 8px;
+font-style: normal;
+margin-left: -10px;
+margin-top: -21px;
+}
+}
+
+
 /*
 ==========================================
 LESS Variables and Mixins
@@ -3451,7 +3813,7 @@ color: #838383;
 line-height:34px;
 text-shadow: none!important;
 padding: 0px 0px!important;
-width:866px;
+/*width:866px;*/
 margin-bottom:15px !important;
  
 }
@@ -3463,8 +3825,8 @@ margin-bottom:15px !important;
 
 .letter-group { width: 100%; }
 .letter-cell { color:black ;width: 5%;margin-top: 45px; font-weight:bold; margin-bottom: 13px;  float: left; font-size: 45px; font-family:"Times New Roman";}
-.row-cells { width: 76%; float: right; margin-right: 186px; }
-.title-cell {width: auto;   margin-left: -92px; padding-top: 3px; font-weight:300; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size:23px;line-height:34px;}
+.row-cells { width: 74%; float: left;  }
+.title-cell {width: auto; padding-top: 3px; font-weight:300; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size:23px;line-height:34px;}
 .clear { clear: both; }
 .fl {
 
@@ -3475,16 +3837,108 @@ float: left;
 .artist_here a
 {
 color:black;
+
 }
 .artist_here a:hover
 {
 color:#838383;
 }
 .artist_here:hover{
-color:black;
+/*color:black;*/
 }
 .header_value a{
 color:black;
 }
+.header_value a:hover{
+color:#838383;
+}
+.artist_info p{
+clear:both;
+color: #838383;
+  font-size:15px;
+  font-style: normal;
+ margin-top: -3px;
+line-height: 18px;
+  font-family:"Helvetica Neue","Helvetica","Arial","sans-serif";
+}
+.art_email{
 
+font-family:"Helvetica Neue","Helvetica","Arial","sans-serif";
+}
+
+.art_email p{
+color:#838383;
+font-size: 13px;
+margin: 0;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+padding: 0px;
+}
+
+.art_email .email_link  a{
+color:black;
+}
+
+.art_email .email_link  span{
+font-weight:bold;
+}
+
+.art_email .email_link  a:hover{
+color:#838383;
+font-weight:normal;
+} 
+.email_link:hover{
+/*font-weight:bold;*/
+} 
+
+.country_block
+{
+border-top: 2px solid #666666;
+margin-bottom:34px;
+}
+.country_name
+{
+color:black;
+font-weight: bold;
+font-size: 35px;
+font-family: "Times New Roman";
+text-transform: uppercase;
+margin-top:40px;
+
+}
+.artist_name
+{
+font-weight: 300;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-size: 23px;
+line-height: 34px;
+margin-top:10px;
+margin-left:5px;
+}
+.by_country
+{
+float: right;
+margin-top: -77px;
+font-size:45px;
+font-weight:bold;
+}
+
+.by_country a
+{
+font-family: "Times New Roman";
+color:#000000!important;
+}
+
+.by_country a:hover
+{
+
+color:#838383!important;
+}
+.art_alpha
+{
+font-family:"Times New Roman";
+font-size:45px;
+color:#000000;
+margin-top: 39px; 
+margin-bottom: 44px;
+}
 

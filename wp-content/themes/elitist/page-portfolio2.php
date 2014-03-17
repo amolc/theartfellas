@@ -3,7 +3,7 @@
 Template Name: AlphaPortfolio
 */
 ?>
-<?php include('header_artist_thumbnail.php'); //get_header(); ?>
+<?php include('header_artist_thumbnail_v1.php'); //get_header(); ?>
 
 
 		<?php get_template_part( "beforeloop", "portfolio" ) ?> 

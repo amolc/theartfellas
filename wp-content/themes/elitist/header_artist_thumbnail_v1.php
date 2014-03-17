@@ -99,7 +99,7 @@
 
 
 
-            <div class="navbar span3" style="width:209px !important;">
+            <div class="navbar span3" style="float:left;">
 			     
 
 
@@ -134,7 +134,7 @@
         $res = mysql_query("Select * from wp_posts where ID='3963' and post_status = 'publish' ") or die(mysql_error());
         $row = mysql_fetch_array($res); 	
 		?>
-		<div class="span4" style="font-size:13px; margin-left: 6px; width:241px !important;">
+		<div class="span4" style="font-size:13px; margin-left: 6px; width:241px !important;height:100px;float:left">
 			<span class="artist_here"><i><?php echo $row['post_content']; ?></i></span> 
 			
 		</div>

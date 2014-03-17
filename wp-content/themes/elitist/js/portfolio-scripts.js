@@ -69,20 +69,20 @@ jQuery(document).ready(function($) {
 			var window_width = $(window).width();
 			
 			if(window_width >=2100){
-				columns = 5;
+				columns = 4;
 			}else if(window_width >=1600 && window_width <2100){
 				columns = 4;
 			}else if(window_width >=1400 && window_width <1600){
 				columns = 4;
 			}else if(window_width >=1100 && window_width <1400){
-				columns = 3;
+				columns = 4;
 			}else if(window_width >=481 && window_width <1100){
-				columns = 2;
+				columns = 4;
 			}else if(window_width <481){
-				columns = 1;
+				columns = 4;
 			}
-			 //console.log("Window:"+window_width);
-			 //console.log("Columns:"+columns);
+			 console.log("Window:"+window_width);
+			 console.log("Columns:"+columns);
 			return Math.floor( $container_isotope.width() / columns);
 		} 
 

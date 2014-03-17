@@ -37,7 +37,7 @@
 
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<meta name="viewport" content="width=1500, initial-scale=1.0">
+		<meta name="viewport" content="width=1000, initial-scale=1.0">
         
 
         
@@ -105,7 +105,7 @@
 
 
 
-            <div class="navbar span3" style="width:209px !important;">
+            <div class="navbar span3" style="float:left;">
 			     
 
 
@@ -138,18 +138,13 @@
         $row = mysql_fetch_array($res); 	
 		?>
 			</div><!-- /navbar -->
-		<div class="span4" style="font-size:13px; margin-left: 6px; width:250px !important;">
+		<div class="span4" style="font-size:13px; margin-left: 6px; width:250px !important;float:left;">
 			<p style="line-height:16.5px;">	<i class="header_value"><?php echo $row['post_content']; ?></i></p>
 						
 		</div>
-        	<div class="logo_container span5" style="width: 41.1709%;">
+        	<div class="logo_container" >
 				<a href="http://www.theartfellas.com/">
-                <!--<h1><a href="<php echo home_url(); ?>/"><php if($logo = of_get_option('logo')){ ?>
-				<img src="<php echo $logo; ?>" alt="<php bloginfo('name'); ?>"  />
-				<php }else{ //bloginfo('name');
-				}?>
-				</a></h1>
-                <p><php //bloginfo('description'); ?></p> -->
+                
             	</a>
             </div><!-- /logo_container -->
 
