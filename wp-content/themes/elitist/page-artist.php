@@ -10,10 +10,10 @@
     Be sure to set the $posts_per_row and $posts_per_page variables.
     */
     $posts_per_row = 3;
-    $posts_per_page = 15;
+    $posts_per_page = 30;
     ?>
      
-    <?php include('header_artist.php'); //get_header(); ?>
+    <?php include('header_artist_qasim.php'); //get_header(); ?>
      
     <style type="text/css">
     
@@ -25,7 +25,8 @@
        <!--	<div style='font-size: 45px;font-family: "Times New Roman";'>View all artist in thumbnails <a href="http://apps.fountaintechies.com/theartfellas/?page_id=3631">here</a></div>-->
        	    <div style="border-bottom: 2px solid #666666;margin-top:10px;margin-bottom:12px;"></div>
        	    
-           <h2 style='font-family:"Times New Roman";font-size:45px;color:#000000;margin-top: 39px; margin-bottom: 44px;'><?php the_title(); ?></h2> 
+           <h2 class="art_alpha"><?php the_title(); ?></h2> 
+		   <!--<div class="by_country" ><a href="http://www.theartfellas.com/?page_id=4052">By country</a></div>-->
 									
           
          

@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: AlphaPortfolio
+Template Name: work
 */
 ?>
-<?php  include('header_artist_thumbnail_v1.php'); ?>
+<?php get_header(); ?>
 
 
 		<?php get_template_part( "beforeloop", "portfolio" ) ?> 
@@ -162,7 +162,7 @@ Template Name: AlphaPortfolio
 							$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
 							//Get the taxonomys
 							$terms = get_the_terms( $wp_query->post->ID, $portfolio_replacement.'_categories');
-							if(isset($terms[31])){
+							if(isset($terms[30])){
 							
 							
 							//print_r(get_the_terms( $wp_query->post->ID, 'portfolio_categories'));

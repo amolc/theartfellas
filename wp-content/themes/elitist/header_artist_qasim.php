@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6" <?php language_attributes(); if(is_single()){echo ' itemscope itemtype="http://schema.org/Article"';} ?>> <![endif]-->
 <!--[if IE 7]>    <html class="ie7" <?php language_attributes(); if(is_single()){echo ' itemscope itemtype="http://schema.org/Article"';} ?>> <![endif]-->
@@ -81,7 +82,6 @@
 			<meta itemprop="image" content="<?php echo $thumbnail[0]; ?>">
         <?php } ?>
        
-
 	</head>
     
     
@@ -133,18 +133,25 @@
 		            ?>
 		            <div class="clearfix"></div>
 	            </nav> 
-		<?php
-        $res = mysql_query("Select * from wp_posts where ID='3923' and post_status = 'publish' ") or die(mysql_error());
-        $row = mysql_fetch_array($res); 	
-		?>
+		
 			</div><!-- /navbar -->
-		<div class="span4" style="font-size:13px; margin-left: 6px; width:250px;float:left;">
-			<p style="line-height:16.5px;">	<i class="header_value"><?php echo $row['post_content']; ?></i></p>
-						
+			<?php
+        $res = mysql_query("Select * from wp_posts where ID='3960' and post_status = 'publish' ") or die(mysql_error());
+        $row = mysql_fetch_array($res);	
+		?>
+		<div class="span4" style="font-size:13px; margin-left: 6px; width:250px;height:100px;float:left;line-height: 16.5px;">
+			<span class="artist_here"><i><?php echo $row['post_content']; ?></i></span> 
+			
 		</div>
-        	<div class="logo_container span5" >
+		
+        	<div class="logo_container span5">
 				<a href="http://www.theartfellas.com/">
-                
+                <!--<h1><a href="<php echo home_url(); ?>/"><php if($logo = of_get_option('logo')){ ?>
+				<img src="<php echo $logo; ?>" alt="<php bloginfo('name'); ?>"  />
+				<php }else{ //bloginfo('name');
+				}?>
+				</a></h1>
+                <p><php //bloginfo('description'); ?></p> -->
             	</a>
             </div><!-- /logo_container -->
 

@@ -22,12 +22,13 @@ function header_styles() {
 		font: <?php echo $font_content["style"].' '.stripslashes($font_content["face"]);?>;
 		color: <?php echo $font_content["color"]; ?>;
 		background-color: <?php echo $body_color; ?>;
-
 		<?php if($background_image != ""){ ?>
 		background:url(<?php echo $background_image; ?>) repeat;
-		background-position: -89px -3px;
+		/*background-position: -89px -3px;*/
+		/*background-position: -91px -23px;*/
+		background-position: -242px -28px;
 		background-size:99%;
-		background-attachment:fixed;
+		/*background-attachment:fixed;
 		background-repeat: no-repeat;
 		<?php }elseif($background_pattern != "none"){ ?>
 		background:url(<?php echo get_template_directory_uri(); ?>/images/grid-patterns/<?php echo $background_pattern; ?>) repeat <?php echo $body_color; ?>;
@@ -133,7 +134,6 @@ function header_styles() {
 	footer .quick_contact .form textarea,
 	.simple_btn:hover,
 	h2.intro_line strong,
-	#header .jqueryslidemenu > ul > li > a:hover,
 	#header .jqueryslidemenu > ul > .current_page_item > a,
 	#header .jqueryslidemenu > ul > .current_page_parent > a,
 	.filter_list ul li a:hover,

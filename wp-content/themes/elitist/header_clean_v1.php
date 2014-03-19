@@ -37,7 +37,7 @@
 
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=1250, initial-scale=0">
         
 
         
@@ -140,7 +140,7 @@
         $res = mysql_query("Select * from wp_posts where ID='3966' and post_status = 'publish' ") or die(mysql_error());
         $row = mysql_fetch_array($res); 	
 		?>
-		<div class="span4" style="font-size:13px; margin-left: 6px; width:217px !important;float:left;">
+		<div class="span4" style="font-size:13px; margin-left: 6px; width:250px;float:left;">
 			<p style="line-height:16.5px;">	<i class="header_value"><?php echo $row['post_content']; ?></i></p>
 		</div>
         	<div class="logo_container" >

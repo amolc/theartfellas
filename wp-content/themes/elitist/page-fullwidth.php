@@ -26,7 +26,7 @@ Template Name: Page Full Width
                                     <h2 style='font-family:"Times New Roman";font-size:45px;color:#000000;font-weight:800;padding: 37px 0px 24px 0px; margin-bottom:0px !important;'><?php the_title(); ?></h2> 
 											
                                         
-                                            <div class="artistdetail"  style="padding-top: 0px;">
+                                            <div class="artistdetail"  style="width:750px;">
 													   <?php the_content(); ?>
 												</div>
                         <?php //get_the_subtitle(); ?>

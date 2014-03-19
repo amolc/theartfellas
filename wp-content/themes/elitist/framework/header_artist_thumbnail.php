@@ -154,7 +154,7 @@ $.noConflict();
 			<span class="artist_here">View all artist in alphabetical order<a href="http://apps.fountaintechies.com/theartfellas/?page_id=3495"> &nbsp; here</a></span> 
 			
 		</div>
-        	<div class="logo_container span5" style="width: 41.1709%;">
+        	<div class="logo_container span5">
 				<a href="http://apps.fountaintechies.com/theartfellas/">
                 <!--<h1><a href="<php echo home_url(); ?>/"><php if($logo = of_get_option('logo')){ ?>
 				<img src="<php echo $logo; ?>" alt="<php bloginfo('name'); ?>"  />

@@ -1,6 +1,6 @@
 
 
-            <div class="clearfix"></div>
+            <div class="clearfix" style="margin-top:-10px;height:0px;"></div>
 
       </div><!-- /container -->
 
@@ -9,11 +9,11 @@
 <?php if(!is_page_template('gallery-fullscreen.php')){ ?>
     
         
-                <div class="sub_footer_wrap">
+                <div class="sub_footer_wrap" >
                     <div class="sub_footer content_wrap">
                         <div class="row-fluid">
                             <div class="span9">
-                                 <p class="art_email"><span class="email_link" ><span>THE ART FELLAS |</span><a href="#"> info@theartfellas.com</a> </span> | 46 Kim Yam Road, #02-25, The Herencia, Singapore 239351<?php //$footer_text = of_get_option('footer_text'); if($footer_text){ echo stripslashes($footer_text);} ?></p>
+                                 <p>THE ART FELLAS | <a href="#" style="color:black">info@theartfellas.com </a> | 46 Kim Yam Road, #02-25, The Herencia, Singapore 239351<?php //$footer_text = of_get_option('footer_text'); if($footer_text){ echo stripslashes($footer_text);} ?></p>
                             </div>
                             
                             <div id="fb_icon" class="span3">

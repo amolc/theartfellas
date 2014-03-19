@@ -56,7 +56,7 @@ Template Name: Portfolio
             <div id="portfolio_container" class="black_a_white">
             	
                
-            	<div class="preloader"></div>
+            	
 
                     <?php 	
 					
@@ -67,6 +67,7 @@ Template Name: Portfolio
 					if(is_singular()){
 						global $wp_query;
 						$post = $wp_query->get_queried_object();
+						
 						$portfolio_replacement = get_post_meta($post->ID, 'sbg_selected_portfolio_replacement', true);
 						//If default selected
 						if($portfolio_replacement == '0' || $portfolio_replacement == ''){
@@ -80,7 +81,7 @@ Template Name: Portfolio
 
 
 					$terms_portfolio = get_terms($portfolio_replacement."_categories"); //get all the terms from the current portfolio (not empty terms)
-
+					
 					$terms_list = array();
 					$terms_parents = array();
 
@@ -114,24 +115,7 @@ Template Name: Portfolio
 									$term_parent = get_term_by('id', $terms_parents[$i], $portfolio_replacement."_categories");
 									
 					?>
-										<div class="ql_filter filter_list">
-                    						<h4><?php echo $term_parent->name; ?></h4>
-											<ul>
-												<li class="active"><i class="icon-eye-open"></i><a href="#" data-filter="*" >All<span></span></a></li>
-												<?php
 										
-													foreach ($term as $term_child) {
-														$term_obj = get_term_by('id', $term_child, $portfolio_replacement."_categories");
-														if($term_obj){
-												?>
-														<li><i class="icon-eye-open"></i><a href="#" data-filter="._<?php echo $term_obj->slug; ?>"><?php echo $term_obj->name; ?></a></li>
-												<?php
-														}
-													} 
-												?>
-											</ul>
-											<div class="clearfix"></div>
-										</div><!-- /ql_filter -->
 										
 										
 					<?php 
@@ -147,22 +131,46 @@ Template Name: Portfolio
                     
 	                    
 						 <?php 
+
+						 
 						 //The numbers of words to show in the portfolio descriptions
 						 function new_excerpt_length($length) {
 												return 10;
 						}
+						
+						
+						 function mam_posts_join ($join) {
+							global $wpdb, $mam_global_join;
+							
+								$mam_global_join = " JOIN $wpdb->term_relationships r ON (r.object_id = $wpdb->posts.ID)";
+							if ($mam_global_join) $join .= " $mam_global_join";
+							return $join;
+						}
+						
+						
+						add_filter('posts_join','mam_posts_join');
 						add_filter('excerpt_length', 'new_excerpt_length');
-						 
-						 query_posts(array('post_type'=>$portfolio_replacement, 'posts_per_page' => -1)); 
+
+							$args = array(
+							'post_type'=>$portfolio_replacement,
+								'posts_per_page' => -1
+								
+							);
+							query_posts( $args );
+						 //print_r($res);exit;
 						 if (have_posts()) : while (have_posts()) : the_post();
 							$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
 							//Get the taxonomys
 							$terms = get_the_terms( $wp_query->post->ID, $portfolio_replacement.'_categories');
+							if(isset($terms[31])){
+							
+							
 							//print_r(get_the_terms( $wp_query->post->ID, 'portfolio_categories'));
 							$termsToPrint = "";
 							$_termsToPrint = "";
 
 							if($terms){
+							
 								foreach ( $terms as $term ) {
 									
 									$_termsToPrint .= "_".$term->slug." ";
@@ -190,9 +198,10 @@ Template Name: Portfolio
 			                            <div class="ql_hover_content"  >
 			                            <div class="portfolio-box">
 			                            <h2 style="color: black!important;"><?php the_title(); ?></h2>
-			                            <p style="font-size:18px;" ><?php the_excerpt(); ?></p>
-			                            
-			                            <div class="portfolio_cats" style="font-size:17.5px;"><?php if($termsToPrint){ echo substr($termsToPrint, 0, -2);} ?></div>
+			                            <!--<p style="font-size:18px;font-family:Helvetica!important;" ><php the_excerpt(); ?></p>-->
+			                            <span class="artist_info"><?php the_excerpt(); ?></span>
+										
+			                            <!--<div class="portfolio_cats" style="font-size:17.5px;"><?php if($termsToPrint){ echo substr($termsToPrint, 0, -2);} ?></div>-->
 			                            </div>
 			                            </div><!-- /ql_hover_content -->
 
@@ -228,7 +237,7 @@ Template Name: Portfolio
                             </div><!-- /portfolio_item -->
 
                         <?php
-						
+						}
 						endwhile; ?>
                     
                         <?php //include (TEMPLATEPATH . '/inc/nav.php' ); ?>

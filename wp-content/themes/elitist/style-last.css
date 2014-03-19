@@ -24,12 +24,6 @@ html {
 }
 body {
   background-color: #000000;
-  background:url(http://www.theartfellas.com/wp-content/themes/elitist/images/AF-background.png) ;
-  /*background-origin: padding-box!important;*/
-  background-size:99%;
-  /*background-position: 0px 0px!important;*/
-  background-position: -89px -3px;
-  background-repeat: no-repeat!important;
   color:#838383 !important;
 }
 #wrap {
@@ -46,7 +40,7 @@ Header
 #header {
   padding-top:7px;
   min-height: 162px;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #ffffff;
   /*border-bottom: 2px solid #ffffff; padding: 12px 0;*/
   margin-bottom: 0;
  margin-top: 58px;
@@ -60,17 +54,15 @@ Header
 
 .logo_container a {
 	float:left;
-	width:450px;
+	width:472px;
 	height:20px;
-  	/*background: url(images/logo-theartfellas.png) no-repeat right;*/
-  	background: url(images/8-web-Amol-TAF.png) no-repeat right;
-  	
+  	background: url(images/logo-theartfellas.png) no-repeat right;
 }
 .logo_container a:hover {
 	float:left;
-	width:450px;
+	width:472px;
 	height:20px;
-	background: url(images/8-web-Amol-TAF-2.png) no-repeat right;
+	background: url(images/logo-theartfellas_hover.png) no-repeat right;
 }
 
 
@@ -138,7 +130,7 @@ Nav Menu
   text-transform: uppercase;
 }
 #header .jqueryslidemenu > ul > li > a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 #header .jqueryslidemenu > ul > .current_page_item > a {
   color: #ffffff;
@@ -2302,7 +2294,7 @@ Portfolio
   float: left;
   overflow: hidden;
   height: auto;
-  padding: 4px;
+  padding: 2px;
 }
 .portfolio_item a {
   display: block;
@@ -3674,9 +3666,6 @@ margin-top: -21px;
 margin-left: 118px!important;
 font-size: 9px!important;
 }
-.title-cell  a:hover{
-color:black!important;
-}
 .art_alpha
 {
 font-family:"Times New Roman";
@@ -3823,12 +3812,6 @@ padding: 0px 0px!important;
 margin-bottom:15px !important;
  
 }
-.artistdetail a{
-color:black!important;
-}
-.artistdetail a:hover{
-color:#838383!important;
-}
 .mrgn{ margin:30px !important;}
 
 /*
@@ -3837,11 +3820,8 @@ color:#838383!important;
 
 .letter-group { width: 100%; }
 .letter-cell { color:black ;width: 5%;margin-top: 45px; font-weight:bold; margin-bottom: 13px;  float: left; font-size: 45px; font-family:"Times New Roman";}
-.row-cells { width: 74%; float: left;  }
-.title-cell {width: auto; padding-top: 3px; font-weight:300; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size:23px;line-height:34px;}
-.title-cell  a:hover{
-color:black!important;
-}
+.row-cells { width: 76%; float: right; margin-right: 186px; }
+.title-cell {width: auto;   margin-left: -92px; padding-top: 3px; font-weight:300; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size:23px;line-height:34px;}
 .clear { clear: both; }
 .fl {
 
@@ -3852,14 +3832,13 @@ float: left;
 .artist_here a
 {
 color:black;
-
 }
 .artist_here a:hover
 {
 color:#838383;
 }
 .artist_here:hover{
-/*color:black;*/
+color:black;
 }
 .header_value a{
 color:black;
@@ -3892,36 +3871,27 @@ padding: 0px;
 .art_email .email_link  a{
 color:black;
 }
-
-.art_email .email_link  span{
-font-weight:bold;
-}
-
 .art_email .email_link  a:hover{
 color:#838383;
 font-weight:normal;
 } 
 .email_link:hover{
-/*font-weight:bold;*/
+font-weight:bold;
 } 
 
 .country_block
 {
 border-top: 2px solid #666666;
-margin-bottom: 31px;
-
-
+margin-bottom:34px;
 }
 .country_name
 {
 color:black;
 font-weight: bold;
-font-size: 45px;
+font-size: 35px;
 font-family: "Times New Roman";
 text-transform: uppercase;
-margin-top:45px;
-margin-bottom: 15px;
-
+margin-top:40px;
 
 }
 .artist_name
@@ -3929,13 +3899,9 @@ margin-bottom: 15px;
 font-weight: 300;
 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 font-size: 23px;
-line-height: 38px;
-
-}
-
-.artist_name a:hover
-{
-color:black!important;
+line-height: 34px;
+margin-top:10px;
+margin-left:5px;
 }
 .by_country
 {

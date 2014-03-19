@@ -81,8 +81,8 @@ jQuery(document).ready(function($) {
 			}else if(window_width <481){
 				columns = 4;
 			}
-			 console.log("Window:"+window_width);
-			 console.log("Columns:"+columns);
+			 //console.log("Window:"+window_width);
+			 //console.log("Columns:"+columns);
 			return Math.floor( $container_isotope.width() / columns);
 		} 
 
