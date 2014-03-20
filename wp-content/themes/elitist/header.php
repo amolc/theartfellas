@@ -142,7 +142,7 @@
 			<p style="line-height:16.5px;">	<i class="header_value"><?php echo $row['post_content']; ?></i></p>
 						
 		</div>
-        	<div class="logo_container span5" >
+        	<div class="logo_container" >
 				<a href="http://www.theartfellas.com/">
                 
             	</a>

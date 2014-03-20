@@ -144,7 +144,7 @@
 			
 		</div>
 		
-        	<div class="logo_container span5">
+        	<div class="logo_container">
 				<a href="http://www.theartfellas.com/">
                 <!--<h1><a href="<php echo home_url(); ?>/"><php if($logo = of_get_option('logo')){ ?>
 				<img src="<php echo $logo; ?>" alt="<php bloginfo('name'); ?>"  />

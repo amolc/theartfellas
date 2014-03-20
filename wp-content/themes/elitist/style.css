@@ -23,13 +23,12 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: #000000;
-  background:url(http://www.theartfellas.com/wp-content/themes/elitist/images/AF-background.png) ;
-  /*background-origin: padding-box!important;*/
-  background-size:99%;
-  /*background-position: 0px 0px!important;*/
+  background-color:#ffffff;
+  background:url(http://www.theartfellas.com/wp-content/themes/elitist/images/AF-background.png) repeat;
   background-position: -89px -3px;
-  background-repeat: no-repeat!important;
+  background-size:99%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
   color:#838383 !important;
 }
 #wrap {
@@ -56,6 +55,7 @@ Header
 .logo_container {
   float:right !important;
   margin:-6px 0px 0px px;
+  
 }
 
 .logo_container a {
@@ -3090,6 +3090,7 @@ Global Styles
   
   
 .logo_container {
+	
   float:right !important;
 }
 
@@ -3147,6 +3148,7 @@ Global Styles
 .logo_container {
   float:right !important;
   margin:-6px 0px 0px px;
+  
 }
 
 .logo_container a {
