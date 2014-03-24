@@ -30,6 +30,8 @@ body {
   background-attachment:fixed;
   background-repeat: no-repeat;
   color:#838383 !important;
+  /* trying to resolve the fixed background size for iphone */
+  
 }
 #wrap {
   padding: 0px;
