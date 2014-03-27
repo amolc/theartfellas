@@ -769,7 +769,7 @@ Flex Slider
 .flex-control-nav li a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.flex-direction-nav {
+.flex-container .flex-direction-nav {
   position: absolute;
   right: 1.53846153846154em;
   top: 20px;
@@ -814,6 +814,26 @@ Flex Slider
   border: #ffffff 2px solid;
   color: #ffffff;
 }
+.flex_carousel .c_prev { 
+margin-right: 1336px!important;
+position: absolute;
+margin-left: -1092px;
+margin-top: -78px!important;
+}
+.flex_carousel .c_next {
+	margin-top: -97px!important;
+	margin-right: -15px!important;
+	float: right!important;
+	
+}
+.flex_carousel .flex-direction-nav {
+  position: absolute;
+  right: 1.53846153846154em;
+}
+.flex_carousel .flex-control-nav {
+display: none;
+}
+
 /* Resize Button
 --------------------------------*/
 .flexslider .flex-direction-nav li a.flex-resize {

@@ -5,10 +5,10 @@ $(window).load(function() {
 
 $('.flex_carousel').flexslider({
     animation: "slide",
-    controlNav: false,
-    directionNav: false, 
-    animationLoop: false,
-    slideshow: false,
+    controlNav: true,
+    directionNav: true, 
+    animationLoop: true,
+    slideshow: true,
     itemWidth: 210,
     itemMargin: 5,
     asNavFor: '.flexslider'
@@ -26,7 +26,7 @@ $('.flexslider').flexslider({
 				animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
 				smoothHeight: true,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
 				startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
-				slideshow: true,                //Boolean: Animate slider automatically
+				slideshow: false,                //Boolean: Animate slider automatically
 				slideshowSpeed: parseInt(WP_Flexslider.slideshowSpeed),           //Integer: Set the speed of the slideshow cycling, in milliseconds
 				animationSpeed: parseInt(WP_Flexslider.animationSpeed),            //Integer: Set the speed of animations, in milliseconds
 				initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
@@ -69,7 +69,7 @@ $('.flexslider').flexslider({
 				// Callback API
 				start: function(slider){
 					slider.removeClass("ql_loading");
-					slider.children(".flex-direction-nav").append('<li><a href="#" class="flex-resize ss_button"><i class="icon-resize-small"></i><i class="icon-resize-full"></i></a></li>');
+					slider.children(".flex-direction-nav").append('<li><a href="#" class=" raza flex-resize ss_button"><i class="icon-resize-small"></i><i class="icon-resize-full"></i></a></li>');
 				
 					$(".flex-resize").on('click', function(e){
 						e.preventDefault();
