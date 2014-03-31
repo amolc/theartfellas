@@ -1,6 +1,6 @@
 
 
-            <div class="clearfix" style="margin-top:-10px;height:0px;"></div>
+            <div class="clearfix" style="margin-top:-12px;height:0px;"></div>
 
       </div><!-- /container -->
 
@@ -13,7 +13,7 @@
                     <div class="sub_footer content_wrap">
                         <div class="row-fluid">
                             <div class="span9">
-                                 <p>THE ART FELLAS | <a href="#" style="color:black">info@theartfellas.com </a> | 46 Kim Yam Road, #02-25, The Herencia, Singapore 239351<?php //$footer_text = of_get_option('footer_text'); if($footer_text){ echo stripslashes($footer_text);} ?></p>
+                                 <p style="margin-top: -3px;"><span style="font-weight:bold;">THE ART FELLAS |</span> <a href="#" style="color:black">info@theartfellas.com </a> | 46 Kim Yam Road, #02-25, The Herencia, Singapore 239351<?php //$footer_text = of_get_option('footer_text'); if($footer_text){ echo stripslashes($footer_text);} ?></p>
                             </div>
                             
                             <div id="fb_icon" class="span3">
