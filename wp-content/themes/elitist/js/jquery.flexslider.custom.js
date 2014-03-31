@@ -5,10 +5,10 @@ $(window).load(function() {
 
 $('.flex_carousel').flexslider({
     animation: "slide",
-    controlNav: true,
+    controlNav: false,
     directionNav: true, 
-    animationLoop: true,
-    slideshow: true,
+    animationLoop: false,
+    slideshow: false,
     itemWidth: 210,
     itemMargin: 5,
     asNavFor: '.flexslider'
@@ -69,7 +69,7 @@ $('.flexslider').flexslider({
 				// Callback API
 				start: function(slider){
 					slider.removeClass("ql_loading");
-					slider.children(".flex-direction-nav").append('<li><a href="#" class=" raza flex-resize ss_button"><i class="icon-resize-small"></i><i class="icon-resize-full"></i></a></li>');
+					slider.children(".flex-direction-nav").append('<li><a href="#" class="flex-resize ss_button"><i class="icon-resize-small"></i><i class="icon-resize-full"></i></a></li>');
 				
 					$(".flex-resize").on('click', function(e){
 						e.preventDefault();

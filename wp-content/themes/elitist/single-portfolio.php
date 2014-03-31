@@ -93,7 +93,7 @@
 														    }
 
 															?>
-																<img src="<?php echo get_template_directory_uri(); ?>/framework/timthumb.php?src=<?php echo $thumbnail[0]; ?>&amp;w=<?php if($is_portrait){ echo $width_portrait; }else{ echo $width; } ?>"   />
+																<img style="margin: 0 auto;" src="<?php echo $thumbnail[0]; ?>" />
 															</li>
 															<?php
 														}
@@ -119,6 +119,7 @@
 															    // Get image's source based on size, can be 'thumbnail', 'medium', 'large', 'full' or registed post thumbnails sizes
 															    $src = wp_get_attachment_image_src( $att, 'full' );
 															    $src = $src[0];
+																//echo $src."<br />--qasim";
 
 															    $image_data = wp_get_attachment_metadata($att);
 
@@ -130,8 +131,9 @@
 															    	echo "<li>";
 															    	$is_portrait = false;
 															    }
+																 
 															  	?>
-															    	<img src="<?php echo get_template_directory_uri(); ?>/framework/timthumb.php?src=<?php echo $src; ?>&amp;w=<?php if($is_portrait){ echo $width_portrait; }else{ echo $width; } ?>"   />
+															    	<img style="margin: 0 auto;" src="<?php echo $src;?>" />
 															    <?php
 															    echo "</li>";
 

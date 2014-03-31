@@ -1,0 +1,3 @@
+/public_html/wp-content/themes/twentytwelve
+/public_html/wp-content/themes/elitist
+/public_html/wp-content/themes/elitist/js/ty.php
